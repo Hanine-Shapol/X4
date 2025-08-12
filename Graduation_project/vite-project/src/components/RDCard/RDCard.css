@@ -1,0 +1,84 @@
+.RD_Card{
+    width: 100%;
+    max-width: 798px;
+    border: 1px solid #98989A;
+    padding: 100px 50px;
+
+    .RD_CardHeader{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .RD_number{
+            font-size: 150px;
+            margin-right: 10px;
+            color: #D8FF99;
+        }
+        .RD_title{
+            display: block;
+            width: 100%;
+            font-size: 30px;
+            font-weight: 500;
+            text-align: start;
+            padding-bottom: 26px;
+            border-bottom: 1px solid #98989A;
+            color: #98989A;
+        }
+        }
+        .RD_discription{
+            font-size: 18px;
+            text-align: start;
+            color: #98989A;
+    
+        }
+    }
+    
+
+    @media screen and (max-width: 1440px){
+        .RD_Card{
+            width: 100%;
+            padding: 80px 40px;
+            margin: 0 auto;
+
+
+
+            .RD_CardHeader{
+                
+                .RD_number{
+                    font-size: 120px;
+                }
+                .RD_title{
+                    font-size: 24px;
+                    padding-bottom: 20px;
+
+                }
+            }
+            .RD_discription{
+                font-size: 16px;        
+            }
+        }
+    }
+    
+    @media screen and (max-width: 992px){
+        .RD_Card{
+            max-width: 358px;
+            padding: 40px 24px;
+
+
+            .RD_CardHeader{
+                
+                .RD_number{
+                    font-size: 80px;
+                }
+                .RD_title{
+                    font-size: 20px;
+                    padding-bottom: 18px;
+
+                }
+            }
+            .RD_discription{
+                font-size: 14px;
+            }
+        }
+    }
+    
+    
