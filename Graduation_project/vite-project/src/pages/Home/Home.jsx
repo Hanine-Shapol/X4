@@ -1,8 +1,7 @@
+
 import './Home.css';
 export default function Home() {
     return(
-        <section>
-            <h1>Home</h1>
-        </section>
+    <h1>Home</h1>
     )
 }
