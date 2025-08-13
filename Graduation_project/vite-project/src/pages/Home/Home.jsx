@@ -1,6 +1,7 @@
 import './Home.css';
-import ThankyouSec from "../../components/ThankyouSec/ThankyouSec"
-import SATrustedLogos from "../components/SATrustedLogos/SATrustedLogos"
+
+import ThankyouSec from '../../components/ThankyouSec/ThankyouSec';
+import SATrustedLogos from '../../components/SATrustedLogos/SATrustedLogos';
 /*"D:\X4\X4\Graduation_project\vite-project\src\components\ThankyouSec\ThankyouSec.jsx"*/
 
 const Home = () => {

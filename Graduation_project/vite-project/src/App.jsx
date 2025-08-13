@@ -6,6 +6,7 @@ import About_page from './pages/About_page/About_page'
 import Process_page from './pages/Process_page/Process_page'
 import Work_page from './pages/Work_page/Work_page'
 
+
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
   <Route path="/Process_page" element={<Process_page />} />
   <Route path="/Work_page" element={<Work_page />} />
   <Route path="/thankyou" element={<Home/>} />
+  
 </Routes>
 }
 

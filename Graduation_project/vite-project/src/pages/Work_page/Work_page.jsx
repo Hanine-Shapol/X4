@@ -1,5 +1,5 @@
-import SASquerup from "../components/SASquerup/SASquerup"
 
+import SASquerup from "../../components/SASquerup/SASquerup"
 const Work = () => {
     return (
         <SASquerup
