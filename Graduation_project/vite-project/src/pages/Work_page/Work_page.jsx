@@ -1,8 +1,10 @@
+import WorkProjcets from '../../components/MmWorkProjects/WorkProjects';
 import './Work_page.css';
 export default function Work_page() {
-    return(
+    return (
         <section>
             <h1>Work</h1>
+            <WorkProjcets />
         </section>
     )
 }

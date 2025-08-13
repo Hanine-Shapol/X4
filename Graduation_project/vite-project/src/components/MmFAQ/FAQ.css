@@ -1,0 +1,16 @@
+.FAQ {
+    padding: 0 161px 0 163px;
+    background-color: #191919;
+}
+
+@media screen and (max-width:1440px) {
+    .FAQ {
+        padding: 0 80px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .FAQ {
+        padding: 0 16px;
+    }
+}

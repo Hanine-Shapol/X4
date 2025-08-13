@@ -8,15 +8,15 @@ import Work_page from './pages/Work_page/Work_page'
 function App() {
   return (
     <>
-{
-<Routes>
-  <Route path="/" element={<Home />} />
-  <Route path="/About_page" element={<About_page />} />
-  <Route path="/ContactUs_page" element={<ContactUs_page />} />
-  <Route path="/Process_page" element={<Process_page />} />
-  <Route path="/Work_page" element={<Work_page />} />
-</Routes>
-}
+      {
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About_page" element={<About_page />} />
+          <Route path="/ContactUs_page" element={<ContactUs_page />} />
+          <Route path="/Process_page" element={<Process_page />} />
+          <Route path="/Work_page" element={<Work_page />} />
+        </Routes>
+      }
 
     </>
   )
