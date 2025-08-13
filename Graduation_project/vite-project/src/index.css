@@ -9,7 +9,28 @@
   --CardTitleGreenColor: #C5FF66;
   --SecondaryButtonBG: #24242433;
   --BorderColor: #333333;
+  --myprimary-whitespacing : 162px;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--MainBGColor);
+  color: var(--MainFontColor);
+}
+
+.lm_whitespacing_x{
+  padding-left: var(--myprimary-whitespacing);
+  padding-right: var(--myprimary-whitespacing);
+}
+
+.lm_font_size_weight1, .lm_font_size_weight2 {
+  font-size: 18px;
+  font-weight: 500 ;
+}
+
+
 /*  */
 /* ===== Inter ===== */
 @font-face {
@@ -158,6 +179,21 @@
   text-align: center;
 }
 @media screen and (max-width: 1440px) {
+
+  :root{
+    --myprimary-whitespacing : 80px;
+  }
+
+  .lm_font_size_weight1{
+    font-size: 14px;
+    font-weight: 500 ;
+  }
+
+  .lm_font_size_weight2{
+    font-size: 16px;
+    font-weight: 500 ;
+  }
+
   .HSH_Main_Titles {
     font-size: 38px;
   }
@@ -188,6 +224,11 @@ font-size: 16px;
 }
 @media screen and (max-width:992px)
 {
+
+  :root{
+    --myprimary-whitespacing : 16px;
+  }
+  
   .HSH_Main_Titles{
     font-size: 34px;
   }
