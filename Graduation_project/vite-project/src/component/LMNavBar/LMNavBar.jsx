@@ -2,7 +2,7 @@ import './LMNavBar.css'
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-const LMNavBar = ({image, items, btn, dash}) => {
+const LMNavBar = ({image, items, btn}) => {
     const [show , setShow] = useState(false)
 
     const showHandel = () => {
@@ -22,7 +22,7 @@ const LMNavBar = ({image, items, btn, dash}) => {
                     })}
                 </ul>
                 <div className='lm_btns'>
-                    <Link to="/lmdashborad" className="login lm_font_size_weight1 dash">{dash}</Link>
+                    
                     <Link to="/contact" className="login lm_font_size_weight1">{btn}</Link>
                 </div>
                 <button className="bars" onClick={showHandel}><img src="/assets/images/bars.svg" alt="bars" className='icon' /></button>
@@ -36,7 +36,7 @@ const LMNavBar = ({image, items, btn, dash}) => {
                     })}
                 </ul>
                 <div className='lm_btns'>
-                    <Link to="/lmdashborad" className="login lm_font_size_weight1 dash"  onClick={() => setShow(false)}>{dash}</Link>
+            
                     <Link to="/contact" className="login lm_font_size_weight1"  onClick={() => setShow(false)}>{btn}</Link>
                 </div>
             </div>

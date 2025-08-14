@@ -36,11 +36,11 @@ nav{
 
 
 
-    .dash{
+    /* .dash{
         background-color: var(--SecondBGColor);
         margin-right: 13px;
         color: white;
-    }
+    } */
 
     .bars {
         display: none;
