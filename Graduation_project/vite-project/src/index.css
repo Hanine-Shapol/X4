@@ -10,6 +10,7 @@
   --SecondaryButtonBG: #24242433;
   --BorderColor: #333333;
   --myprimary-whitespacing : 162px;
+    --myprimary-whitespacing : 162px;
 }
 
 *{
@@ -189,7 +190,10 @@
     font-weight: 500 ;
   }
 
-  .lm_font_size_weight2{
+ @media screen and (max-width : 992px) {
+  :root{
+    --myprimary-whitespacing : 16px;
+  }
     font-size: 16px;
     font-weight: 500 ;
   }
