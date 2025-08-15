@@ -1,16 +1,24 @@
-:root{
+:root {
+  --IDentity_color: #9EFF00;
+  --MainBGColor: #1A1A1A;
+  --SecondBGColor: #262626;
+  --MainFontColor: #FFFFFF;
+  --SecondFontColor: #E6E6E6;
+  --SecondPColor: #98989A;
+  --CardTitleColor: #D8FF99;
+  --CardTitleGreenColor: #C5FF66;
+  --SecondaryButtonBG: #24242433;
+  --BorderColor: #333333;
   --myprimary-whitespacing : 162px;
-  --myprimary-backgound-color : #000000;
-  --mysecond-background-color : #9EFF00;
-  
+    --myprimary-whitespacing : 162px;
 }
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #262626;
-  color: white;
+  background-color: var(--MainBGColor);
+  color: var(--MainFontColor);
 }
 
 .lm_whitespacing_x{
@@ -24,7 +32,155 @@
 }
 
 
-@media screen and (max-width : 1440px ) {
+/*  */
+/* ===== Inter ===== */
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Thin.ttf') format('truetype');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Black.ttf') format('truetype');
+  font-weight: 900;
+}
+
+/* ===== Barlow ===== */
+@font-face {
+  font-family: 'Barlow';
+  src: url('./assets/fonts/Barlow-Thin.ttf') format('truetype');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Barlow';
+  src: url('./assets/fonts/Barlow-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Barlow';
+  src: url('./assets/fonts/Barlow-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Barlow';
+  src: url('./assets/fonts/Barlow-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Barlow';
+  src: url('./assets/fonts/Barlow-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Barlow';
+  src: url('./assets/fonts/Barlow-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Barlow';
+  src: url('./assets/fonts/Barlow-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Barlow';
+  src: url('./assets/fonts/Barlow-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Barlow';
+  src: url('./assets/fonts/Barlow-Black.ttf') format('truetype');
+  font-weight: 900;
+}
+.HSH_Main_Titles {
+  font-family: Barlow;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 68px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--MainFontColor);
+}
+
+.HSH_Green_Button {
+  width: 135px;
+  height: 59px;
+  gap: 8px;
+  opacity: 1;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  border-radius: 8px;
+  color: var(--SecondBGColor);
+}
+
+.HSH_Button {
+  width: 137px;
+  height: 58px;
+  border-width: 1px;
+  gap: 10px;
+  opacity: 1;
+  padding-top: 18px;
+  padding-right: 28px;
+  padding-bottom: 18px;
+  padding-left: 28px;
+  border-radius: 10px;
+  color: var(--MainFontColor);
+  background-color: var(--SecondaryButtonBG);
+
+}
+
+.HSH_Active_Li {
+  background-color: var(--SecondBGColor);
+}
+
+.HSH_subTitle {
+  font-family: Barlow;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  text-align: center;
+}
+@media screen and (max-width: 1440px) {
+
   :root{
     --myprimary-whitespacing : 80px;
   }
@@ -34,16 +190,60 @@
     font-weight: 500 ;
   }
 
-  .lm_font_size_weight2{
-      font-size: 16px;
-      font-weight: 500 ;
-    }
-}
-
-
-@media screen and (max-width : 992px) {
+ @media screen and (max-width : 992px) {
   :root{
     --myprimary-whitespacing : 16px;
   }
+    font-size: 16px;
+    font-weight: 500 ;
+  }
 
+  .HSH_Main_Titles {
+    font-size: 38px;
+  }
+
+  .HSH_Green_Button {
+    width: 104px;
+    height: 45px;
+    padding-top: 12px;
+    padding-right: 18px;
+    padding-bottom: 12px;
+    padding-left: 18px;
+    border-radius: 6px;
+  }
+
+  .HSH_Button {
+    width: 103px;
+    height: 45px;
+    opacity: 1;
+    padding-top: 14px;
+    padding-right: 20px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    border-radius: 8px;
+  }
+.HSH_subTitle{
+font-size: 16px;
 }
+}
+@media screen and (max-width:992px)
+{
+
+  :root{
+    --myprimary-whitespacing : 16px;
+  }
+  
+  .HSH_Main_Titles{
+    font-size: 34px;
+  }
+  .HSH_Green_Button{
+    width: 108px;
+padding-top: 14px;
+padding-right: 20px;
+padding-bottom: 14px;
+padding-left: 20px;
+border-radius: 8px;
+  }
+  .HSH_subTitle{
+font-size: 14px;
+}}
