@@ -1,0 +1,23 @@
+.RD_Container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 1596px;
+    margin: 0 auto;
+
+}
+
+
+@media screen and (max-width: 1440px){
+    .RD_Container{
+        max-width: 1280px;
+    
+    }
+}
+
+@media screen and (max-width: 992px){
+    .RD_Container{
+        /* width: 100%; */
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}

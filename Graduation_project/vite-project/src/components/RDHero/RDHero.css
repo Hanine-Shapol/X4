@@ -1,0 +1,104 @@
+.RD_Hero{
+    height: 100vh;
+    padding-top: 212px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/assets/images/Square-effect.png) , url(/assets/images/hero-home-bg.png);
+    background-repeat: repeat , no-repeat ;
+    background-position: top, bottom center;
+    background-size: auto , auto;
+    background-color: #1E1E1E;
+
+    .RD_title{
+        width: 50%;
+        font-size: 68px;
+        font-weight: 600;
+        color: white;
+    }
+    .RD_description{
+        margin: 40px 0px;
+        padding: 24px 40px;
+        background-color: #24242433;
+        backdrop-filter: blur(12px);
+        border-radius: 12px;
+        box-shadow: 0 4px 4px #00000088;
+        color: #98989A;
+
+        span{
+            padding: 12px 14px;
+            background-color: #262626;
+            border-radius: 8px;
+            box-shadow: 0 4px 4px #00000088;
+        }
+        
+    }
+    
+    .RD_Btn{
+        margin-right: 13px;
+        padding: 18px 28px;
+        font-size: 18px;
+        font-weight: 500;
+        background-color: #24242433;
+        backdrop-filter: blur(12px);
+        border-radius: 10px;
+        text-decoration: none;
+        border: 1px solid #333333;
+    }
+    .RD_GreenBtn{
+        padding: 18px 28px;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 10px;
+        text-decoration: none;
+        background-color: #9EFF00;
+        backdrop-filter: blur(12px);
+        color: #242424;
+    }
+}
+
+@media screen and (max-width: 1440px){ 
+    .RD_Hero{
+        .RD_title{
+            font-size: 48px;
+        }
+        .RD_description{
+            font-size: 18px;
+
+        }
+        .RD_Btn{
+            padding: 14px 20px;
+            }
+        .RD_GreenBtn{
+            padding: 14px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px){ 
+    .RD_Hero{
+        .RD_title{
+            font-size: 34px;
+        }
+        .RD_description{
+            font-size: 16px;
+
+            span {
+                background: none;
+                box-shadow: 0 0 0 0;
+                color: #98989A;
+                padding: 0;
+            }
+        }
+        .RD_Btn{
+            padding: 14px 20px;
+            font-size: 14px;
+            }
+        .RD_GreenBtn{
+            padding: 14px 20px;
+            font-size: 14px;
+
+        }
+    }
+}
