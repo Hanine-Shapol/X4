@@ -1,0 +1,41 @@
+.work-form {
+    width: 500px;
+    margin: 32px auto;
+    padding: 24px;
+    border: 2px solid #262626;
+    box-shadow: 0 0 8px 0px #ffffff8a;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+
+    input,
+    textarea {
+        margin-bottom: 16px;
+        padding: 8px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        width: 100%;
+        background-color: #262626;
+        color: #fff;
+    }
+
+    input[type="file"]::file-selector-button {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 6px;
+        background-color: #9eff00;
+        color: #191919;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    input[type="submit"] {
+        background-color: #9eff00;
+        color: #191919;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
