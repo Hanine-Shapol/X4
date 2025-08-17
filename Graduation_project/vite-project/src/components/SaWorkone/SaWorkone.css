@@ -1,0 +1,135 @@
+.SaWorkone {
+  padding: 0 161px 0 163px;
+  
+}
+
+.SaWorkone .headWorkone {
+  height: 335px;
+  position: relative;
+  z-index: 1;
+  background-color: #1a1a1a; /* Added dark base background to match Figma */
+}
+
+.SaWorkone .containt {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.SaWorkone .containt .squerup-title {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600px;
+  font-size: 48px;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0); /* Added text shadow for better visibility */
+}
+
+.SaWorkone .containt .squerup-subtitle {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400px;
+  font-size: 18px;
+  color: #e6e6e6;
+  margin: 0;
+  line-height: 1.5;
+  max-width: 600px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Added text shadow for better visibility */
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* Fixed background layers to match Figma design */
+.SaWorkone .headWorkone::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/assets/images/Square-effect.png"), 
+  url("/assets/images/head-bg-3.png") ;
+  background-repeat: repeat, no-repeat;
+  background-size: 50px 50px, cover;
+  background-position: top left, center;
+  filter: saturate(0) brightness(0.3);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+/* Reduced green overlay to subtle 5% for Figma accuracy */
+.SaWorkone .headWorkone::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(172, 255, 36, 0.05);
+  z-index: -1;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1440px) {
+  .SaWorkone {
+    padding: 0 80px;
+  }
+  .SaWorkone .headWorkone {
+    height: 280px;
+  }
+  .SaWorkone .containt .squerup-title {
+    font-size: 38px;
+  }
+  .SaWorkone .containt .squerup-subtitle {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .SaWorkone {
+    padding: 0 16px;
+  }
+  .SaWorkone .headWorkone {
+    height: 222px;
+  }
+  .SaWorkone .containt .squerup-title {
+    margin: 0 16px;
+    font-size: 28px;
+    text-align: center;
+  }
+  .SaWorkone .containt .squerup-subtitle {
+    margin: 0 16px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .SaWorkone {
+    max-width: 358px;
+    width: 100%;
+    margin: 16px auto 0 !important; 
+    padding: 0;
+  }
+
+  .SaWorkone .headWorkone {
+    height: 212px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .SaWorkone .containt .squerup-title {
+    font-size: 24px;
+    margin: 0 8px;
+  }
+
+  .SaWorkone .containt .squerup-subtitle {
+    font-size: 12px;
+    margin: 0 8px;
+    line-height: 1.4;
+  }
+}

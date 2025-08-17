@@ -30,6 +30,7 @@ function App() {
         <Route path="/Process_page" element={<Process_page />} />
         <Route path="/Work_page" element={<Work_page />} />
         <Route path="/lmdashborad" element={<LMDashborad />} />  
+        <Route path="/workone" element={<Work_page/>} />
       </Routes>
 
       <LMFooter
@@ -42,6 +43,7 @@ function App() {
           { url: "/About_page", content: "About" },
           { url: "", content: "Career" },
           { url: "/ContactUs_page", content: "Contact" },
+
         ]}
       />
     </>
