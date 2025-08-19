@@ -1,6 +1,7 @@
 
 import { Link, Outlet } from "react-router-dom"
 import RDHero from "../../components/RDHero/RDHero"
+import FAQ from "../../components/MmFAQ/FAQ"
 
 const Home = () => {
 
@@ -14,6 +15,7 @@ const Home = () => {
             />
 
             <Outlet />
+            <FAQ />
         </>
     )
 }

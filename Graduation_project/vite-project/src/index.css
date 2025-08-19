@@ -17,8 +17,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--MainBGColor);
-  color: var(--MainFontColor);
+  background-color: var(--MainBGColor); /*Moamen: "Please Delete This Line" */
+  color: var(--MainFontColor); /*Moamen: "Please Delete This Line" */
 }
 
 .lm_whitespacing_x{

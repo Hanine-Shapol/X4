@@ -9,7 +9,7 @@ const FAQ = () => {
             <HeadOfSection
                 title="Frequently Asked Questions"
                 subtitle="Still you have any questions? Contact our Team via hello@squareup.com"
-                bgImage="/assets/head-bg-4.png"
+                bgImage="/assets/images/head-bg-4.png"
             />
             <FAQCards />
         </section>
